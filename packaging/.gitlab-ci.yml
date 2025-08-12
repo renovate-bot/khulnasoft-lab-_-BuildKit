@@ -118,7 +118,7 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ## REF: https://hub.docker.com/_/debian/
-image: 'docker.io/library/debian:12-slim'
+image: 'docker.io/library/debian:13-slim'
 
 variables:
   # Create a shallow git copy
@@ -137,7 +137,7 @@ variables:
 configure-gitlab:
   stage: build
   ## Not yet setup for Debian 12 (WIP) !!!
-  image: 'docker.io/library/debian:12-slim'
+  image: 'docker.io/library/debian:13-slim'
   before_script:
     - apt-get --quiet update
     - echo "SALSA_TOKEN='${GITLAB_PACKAGES_GROUP_ACCESS_TOKEN}'" > ./.gitlab-token

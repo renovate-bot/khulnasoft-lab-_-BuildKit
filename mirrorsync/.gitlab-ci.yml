@@ -35,12 +35,12 @@ package:
 test buster:
   <<: *TEST-DEBIAN
   <<: *TEST-SIMPLE
-  image: debian:bookworm
+  image: debian:trixie
 
 test bullseye:
   <<: *TEST-DEBIAN
   <<: *TEST-SIMPLE
-  image: debian:bookworm
+  image: debian:trixie
 
 test sid:
   <<: *TEST-DEBIAN
@@ -50,7 +50,7 @@ test sid:
 test basic:
   <<: *TEST-DEBIAN-BUSYBOX
   <<: *TEST-SIMPLE
-  image: debian:bookworm
+  image: debian:trixie
 
 test centos7:
   <<: *TEST-REDHAT

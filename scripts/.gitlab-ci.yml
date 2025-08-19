@@ -9,7 +9,7 @@
 ##   - Target branch or tag: main
 ##   - Activated: Enable
 
-image: "debian:12-slim"
+image: "debian:13-slim"
 
 variables:
   ## Create a shallow git copy

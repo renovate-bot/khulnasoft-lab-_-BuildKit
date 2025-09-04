@@ -130,7 +130,7 @@ clean images:
   stage: clean
   image: docker:latest
   services:
-    - docker:26.0.1-dind
+    - docker:28.4.0-dind
   variables:
     IMAGES_LIST: 'aptly autopkgtest base armel/base armhf/base arm64/base i386/base blhc gbp piuparts reprotest lintian generic_tests'
     RELEASE: kali-dev
